@@ -12,17 +12,37 @@
     <div class="img">
     <img src="/mono.jpeg" class= "center" class="rounded mx-auto d-block" alt="">
     <div class="row">
-        <div class="col"><br><br>
+        <div class="col"><br>
          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quo vero odit, molestias et enim veniam ipsa quam eveniet accusamus illum voluptates placeat velit deserunt dignissimos, eaque incidunt ad aspernatur.
         </div>
-        <div class="col">
+        <div class="col"><br>
          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium eos porro possimus quaerat veritatis perspiciatis debitis assumenda, minus eius distinctio. Alias voluptate error cumque consectetur provident quisquam quo quidem harum?
         </div>
-        <div class="col">
+        <div class="col"><br>
          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem voluptatibus animi, officiis recusandae sunt repellat amet illum nobis accusantium culpa, debitis maiores perferendis, itaque possimus? Quis nostrum ipsam doloremque officiis!
         </div>
       </div>
     </div>
+    <input type="text" id="name" name="name" required
+       minlength="1" maxlength="999999" size="100" class="rounded mx-auto d-block">
+       <input type="submit" value="submit">
+
+       <form action="/tasks" method="POST" class="mt-0">
+        <input class="form-control form-control-lg" type="text" name="task" placeholder="Add item ...">
+        <button type="submit" class="btn btn-primary btn-lg mt-1 mb-5 btn-block">Add Mission</button>
+        <div class="container mx-auto text-center">
+            <h1>Ninja Tasker</h1>
+            <form action="/homePage" method="POST" class="mt-0">
+                <input class="form-control form-control-lg" type="text" name="task" placeholder="Add item ...">
+                <button type="submit" class="btn btn-primary btn-lg mt-1 mb-5 btn-block">Add Mission</button>
+            </form>
+            <ul class="list-group list-group-flush mt-5 text-light">
+                <% for ( let i=0; i < taskToDo.length;  i++ ){%>
+                    <li class="list-group-item" id="<%= i %>" ><%= taskToDo[i].taskItem %></li>
+                <% } %>
+            </ul>
+        </div>
+
     <script src="/js/main.js"></script>
 </body>
 </html>

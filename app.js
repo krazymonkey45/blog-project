@@ -14,7 +14,7 @@ app.set("view engine","ejs");
 app.use(express.static('./public'));
 
 // GEt for tasks: returns all tasks
-app.get('/homePage', function (req, res) {
+app.get('/homePage', function (req, res) {  
     console.log("hitting get route");
     // rendering tasks view and passing taskToDo data
     res.render('homePage', {taskToDo: dummyData});
