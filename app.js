@@ -25,7 +25,7 @@ app.post('/homePage', urlEncoded, function(req, res){
     //formatting for incoming data to add to my data set
   console.log("hitting Post route");
   let incomingItem = {}
-  incomingItem.taskItem = req.body.task
+  incomingItem.taskItem = req.body.homePage
   dummyData.push(incomingItem)
   console.log(dummyData)
   res.redirect('/homePage')
