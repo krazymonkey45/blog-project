@@ -9,30 +9,54 @@
     <link rel="stylesheet" href="/css/main.css">
 </head>
 <body class="">
+        <div id="header">           
+                <button id="btnhome" class="mx-auto">Home</button>          
+                <button id="btnabout" class="mx-auto">About</button>
+                <button id="btncontact" class="mx-auto">Contact</button>
+                <button id="btnsup" class="mx-auto">Help Us</button>           
+                </div>
     <div class="img">
     <img src="/mono.jpeg" class= "center" class="rounded mx-auto d-block" alt="">
     <div class="row">
         <div class="col"><br>
          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quo vero odit, molestias et enim veniam ipsa quam eveniet accusamus illum voluptates placeat velit deserunt dignissimos, eaque incidunt ad aspernatur.
         </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
         <div class="col"><br>
          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium eos porro possimus quaerat veritatis perspiciatis debitis assumenda, minus eius distinctio. Alias voluptate error cumque consectetur provident quisquam quo quidem harum?
         </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
         <div class="col"><br>
          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem voluptatibus animi, officiis recusandae sunt repellat amet illum nobis accusantium culpa, debitis maiores perferendis, itaque possimus? Quis nostrum ipsam doloremque officiis!
         </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
       </div>
     </div>
-    <input type="text" id="name" name="name" required
-       minlength="1" maxlength="999999" size="100" class="rounded mx-auto d-block">
-       <input type="submit" value="submit">
+    <input type="text" id="name" name="name" required minlength="1" maxlength="25" size="50" class="rounded mx-auto d-block">
+       <input type="submit" value="Submit" target="blank">
 
-       <form action="/tasks" method="POST" class="mt-0"></form>
-        <input class="form-control form-control-lg" type="text" name="homePage" placeholder="Add item ...">
-        <button type="submit" class="btn btn-primary btn-lg mt-1 mb-5 btn-block">Add Mission</button>
+       <form action="/homePage" method="POST" class="mt-0"></form>
         <div class="container mx-auto text-center">
                 <input class="form-control form-control-lg" type="text" name="homePage" placeholder="Add item ...">
-                <button type="submit" class="btn btn-primary btn-lg mt-1 mb-5 btn-block">Add Mission</button>
+                <button type="submit" class="btn btn-primary btn-lg mt-1 mb-5 btn-block">Type Blog...</button>
             </form>
             <ul class="list-group list-group-flush mt-5 text-light">
                 <% for ( let i=0; i < taskToDo.length;  i++ ){%>
@@ -40,6 +64,7 @@
                 <% } %>
             </ul>
         </div>
+        
 
     <script src="/js/main.js"></script>
 </body>

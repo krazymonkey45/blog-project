@@ -1,6 +1,14 @@
 const express = require('express')
 const bodyParser = require('body-parser')
 const urlEncoded = bodyParser.urlencoded({extended: false})
+const mysql = require('mysql');
+
+const db = mysql.createConnection({
+    host     : 'localhost',
+    user     : 'admin',
+    password : 'student',
+    database : 'ninjatasker'
+});
 
 const dummyData = [{taskItem: "Work on my portfolio" },{taskItem: "Code and watch anime"},{taskItem: "Sleep"}];
 
